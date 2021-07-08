@@ -1,0 +1,56 @@
+body {
+    background-color: #001635;
+}
+
+
+.column {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+}
+
+.left {
+    background-color: #001635;
+    color: #ffffff;
+    width: 35%;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.left a:link, a:active, a:visited {text-decoration: none; color: #ffffff;}
+.left a:hover {text-decoration: none; color: #ffffff;}
+.left h2 {color: #ffffff;}
+.left hr {width: 65%; border-color: #ffffff;}
+.left img {max-width: 60%; height: auto;}
+.left p {padding-left: 10%; padding-right: 10%; color: #e4e4e4;}
+
+
+
+.right {
+    background-color: #ffffff;
+    color: #001635;
+    width: 850px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.right a:link, a:active, a:visited {text-decoration: none; color: #001635;}
+.right a:hover {text-decoration: underline; color: #004088;}
+.right h3 {padding-left: 15px;}
+.right h4 {padding-left: 15px;}
+.right p {padding-left: 25px; color: black;}
+.right ul {color: black;}
+.right hr {width: 95%; border-color: #001635;}
+
+@media screen and (max-width: 1350px) {
+    .right {width: 65%;}
+}
+
+@media screen and (max-width: 900px) {
+    .left p {padding-left: 3%;}
+}
+
+@media screen and (max-width: 775px) {
+    .column {width: 100%;}
+    .left img {width: 50%; height: auto;}
+}
